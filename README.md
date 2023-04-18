@@ -68,3 +68,7 @@ $ sudo insights-client --register
 ### Lab Clients
 
 For my lab clients I setup four instances named servera.example.com through serverd.example.com
+
+Server | IP Adresss
+-------|------------
+servera.example.com | 10.1.10.201
