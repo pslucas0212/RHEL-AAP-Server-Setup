@@ -14,7 +14,7 @@ For this lab environment I chose dev01.example.com for the hostname of the serve
 Check hostname and local DNS resolution.  Use dig to test forward and reverse lookup of the server hosting Satellite.  If the Satellite hostname is not available from DNS, the initial installation will fail.    
 ```
 $ ping -c3 localhost
-$ ping -c3 aap01.example.com -f
+$ ping -c3 aap01.example.com
 $ dig dev01.example.com +short
 $ dig -x 10.1.10.254 +short
 ```   
