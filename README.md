@@ -15,7 +15,7 @@ Check hostname and local DNS resolution.  Use dig to test forward and reverse lo
 ```
 $ ping -c3 localhost
 $ ping -c3 aap01.example.com
-$ dig dev01.example.com +short
+$ dig aap01.example.com +short
 $ dig -x 10.1.10.254 +short
 ```   
 We will set the hostname on the server to avoid any future issues.
