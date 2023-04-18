@@ -7,9 +7,9 @@ Last update: 18 April 2023
 
 For this example we will be working with RHEL 8.x 
 
-Create a VM for the AAP instance and install RHEL 8.7.  The VM was sized with 2 vCPUS, 8GB RAM and 120GB "local" drive.  Note: For this example I have enabled Simple Content Access (SCA) on the Red Hat Customer portal and do not need to attach a subscription to the RHEL or Satellite repositories.  After you have created and started the RHEL 8.7 VM, we will ssh to the RHEL VM and work from the command line.
+Create a VM for the AAP infrastructure instance and install RHEL 8.7.  The VM was sized with 2 vCPUS, 8GB RAM and 120GB "local" drive.  Note: For this example I have enabled Simple Content Access (SCA) on the Red Hat Customer portal and do not need to attach a subscription to the RHEL or Satellite repositories.  After you have created and started the RHEL 8.7 VM, we will ssh to the RHEL VM and work from the command line.
 
-For this lab environment I chose dev01.example.com for the hostname of the server hosting Satellite. 
+For this lab environment I chose aap01.example.com for the hostname of the server hosting Satellite. 
 
 Check hostname and local DNS resolution.  Use dig to test forward and reverse lookup of the server hosting Satellite.  If the Satellite hostname is not available from DNS, the initial installation will fail.    
 ```
@@ -65,3 +65,6 @@ $ sudo dnf install sos
 ```
 $ sudo insights-client --register
 ```
+### Lab Clients
+
+For my lab clients I setup four instances named servera.example.com through serverd.example.com
